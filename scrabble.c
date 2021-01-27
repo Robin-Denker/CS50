@@ -35,11 +35,15 @@ int compute_score(string word)
  int numb;
  int n = strlen(word);
  for(int i=0; i<n; i++){
+   // checking if char is uppercase
    if(isupper(word[i])){
+   //subtracting the ASCII value (example A = 65; 65 - 65 = 0; 0 = 1 Point)
     numb = word[i]-65;
+   //Determening Points by inserting numb in POINTS[]
     numb = POINTS[numb];
 
    }
+   //checking if char is lowercase
  if(islower(word[i])){
     numb = word[i]-97;
     numb = POINTS[numb];
