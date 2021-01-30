@@ -14,45 +14,50 @@ int main(void)
 string word1 = get_string("Player 1: ");
 string word2 = get_string("Player 2: ");
 
-// Score both words
+// Calculates Score both words
 int score1 = compute_score(word1);
 int score2 = compute_score(word2);
-if(score1>score2){
-printf("Player 1 wins!\n");
+
+
+// if score1 > score2 player 1 wins
+if (score1 > score2)
+{
+    printf("Player 1 wins\n");
 }
-else if(score1<score2){
-printf("Player2 wins!\n");
+else if (score2 > score1)
+{
+    printf("Player 2 wins\n");
 }
-else{
-printf("Tie!\n");
+else
+{
+    printf("Tie\n");
 }
 // TODO: Print the winner
 }
 
 int compute_score(string word)
 {
- int sum=0;
- int numb;
- int n = strlen(word);
- for(int i=0; i<n; i++){
+ int score=0;
+ int ascii;
+ int len = strlen(word);
+ for(int i=0; i<=len; i++){
    // checking if char is uppercase
    if(isupper(word[i])){
    //subtracting the ASCII value (example A = 65; 65 - 65 = 0; 0 = 1 Point)
-    numb = word[i]-65;
-   //Determening Points by inserting numb in POINTS[]
-    numb = POINTS[numb];
+    ascii = word[i]-65;
+    ascii = POINTS[ascii];
 
    }
    //checking if char is lowercase
- if(islower(word[i])){
-    numb = word[i]-97;
-    numb = POINTS[numb];
+   else if(islower(word[i])){
+    ascii = word[i]-97;
+    ascii = POINTS[ascii];
 }
 else{
-numb = 0;
+ascii = 0;
 }
 
-sum+=numb;
+score+=ascii;
 }
-return sum;
+return score;
 }
