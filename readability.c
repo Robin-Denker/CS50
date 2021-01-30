@@ -4,7 +4,7 @@
 #include <math.h>
 #include <ctype.h>
 
-int get(void);
+
 int sentences = 0;
 int words = 1;
 int letters = 0;
