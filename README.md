@@ -1,6 +1,5 @@
 # [CS50x](https://cs50.harvard.edu/x/2021/ "CS50x")
-### Solutions to the labs and problem sets from Harvards CS50x course.
-### Code is written using the CS50 IDE and the corrosponding libaries.
+#### Solutions to the labs and problem sets from Harvards CS50x course.Code is written using the CS50 IDE and the corrosponding libaries.
 
 * [Week 0 - Scratch](https://github.com/Robin-Denker/CS50/tree/main/pset%200)
 * Week 1 - C
