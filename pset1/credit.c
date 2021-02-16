@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    long card_number;
+    long card_num;
     int get_digit;
     int count_digits = 0;
     int other_digit;
